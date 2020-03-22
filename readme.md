@@ -32,3 +32,16 @@ app.add_url_rules('/hello', view_func=hello_world)
 - content-type: =text/html http headers, how to parser the returned text
 - return a `Response` object
 - `make_response` to create
+
+#### requests v.s. urllib
+- requests
+    - `requests.get(url)`
+- urllib
+    - complicate
+
+#### static method
+- `@staticmethod` decorator
+- python3: no different between `class CLS(Object):` and `class CLS:`
+
+
+    
