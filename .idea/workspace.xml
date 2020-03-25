@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f932ad56-182a-4e28-9928-28f86b15b769" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/web/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/web/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisher_book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms/book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/secure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/setting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/spider/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view_models/book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/fisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisher_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/spider/fisher_book.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/httper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/httper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +48,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../readme.md" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Django/MXOnline" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\FlaskApp\Fisher\app" />
+      <recent name="D:\Projects\FlaskApp\Fisher\app\spider" />
+      <recent name="D:\Projects\FlaskApp\Fisher\app\libs" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.fisher">
     <configuration name="fisher" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -60,6 +73,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fisher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Fisher" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,14 +155,33 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask (test/test.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="Fisher" />
+      <option name="target" value="$PROJECT_DIR$/test/test.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Flask server.Fisher" />
       <item itemvalue="Flask server.Flask (fisher.py)" />
       <item itemvalue="Python.fisher" />
       <item itemvalue="Python.test_pymongo" />
+      <item itemvalue="Flask server.Flask (test/test.py)" />
+      <item itemvalue="Python.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Flask server.Flask (test/test.py)" />
         <item itemvalue="Flask server.Flask (fisher.py)" />
         <item itemvalue="Python.test_pymongo" />
       </list>
@@ -146,7 +200,7 @@
       <workItem from="1582088448654" duration="6698000" />
       <workItem from="1582268674934" duration="3523000" />
       <workItem from="1582612894833" duration="7197000" />
-      <workItem from="1584853655812" duration="8574000" />
+      <workItem from="1584853655812" duration="34258000" />
     </task>
     <servers />
   </component>
@@ -166,58 +220,60 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="291" y="29" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1582618146217" />
-    <state x="654" y="256" key="FileChooserDialogImpl" timestamp="1582704830470">
+    <state x="654" y="256" key="FileChooserDialogImpl" timestamp="1584928423206">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1582704830470" />
-    <state width="662" height="194" key="GridCell.Tab.0.bottom" timestamp="1584904958297">
+    <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584928423206" />
+    <state width="744" height="205" key="GridCell.Tab.0.bottom" timestamp="1585114901019">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="194" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584904958297" />
-    <state width="662" height="194" key="GridCell.Tab.0.center" timestamp="1584904958297">
+    <state width="744" height="205" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585114901019" />
+    <state width="744" height="205" key="GridCell.Tab.0.center" timestamp="1585114901019">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="194" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584904958297" />
-    <state width="662" height="194" key="GridCell.Tab.0.left" timestamp="1584904958296">
+    <state width="744" height="205" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585114901019" />
+    <state width="744" height="205" key="GridCell.Tab.0.left" timestamp="1585114901018">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="194" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584904958296" />
-    <state width="662" height="194" key="GridCell.Tab.0.right" timestamp="1584904958297">
+    <state width="744" height="205" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585114901018" />
+    <state width="744" height="205" key="GridCell.Tab.0.right" timestamp="1585114901019">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="194" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584904958297" />
-    <state width="662" height="262" key="GridCell.Tab.1.bottom" timestamp="1584859300260">
+    <state width="744" height="205" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585114901019" />
+    <state width="635" height="342" key="GridCell.Tab.1.bottom" timestamp="1584925326825">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="262" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584859300260" />
-    <state width="662" height="262" key="GridCell.Tab.1.center" timestamp="1584859300260">
+    <state width="635" height="342" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584925326825" />
+    <state width="635" height="342" key="GridCell.Tab.1.center" timestamp="1584925326825">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="262" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1584859300260" />
-    <state width="662" height="262" key="GridCell.Tab.1.left" timestamp="1584859300259">
+    <state width="635" height="342" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1584925326825" />
+    <state width="635" height="342" key="GridCell.Tab.1.left" timestamp="1584925326825">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="262" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1584859300259" />
-    <state width="662" height="262" key="GridCell.Tab.1.right" timestamp="1584859300260">
+    <state width="635" height="342" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1584925326825" />
+    <state width="635" height="342" key="GridCell.Tab.1.right" timestamp="1584925326825">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="662" height="262" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1584859300260" />
-    <state x="374" y="143" key="SettingsEditor" timestamp="1584853665741">
+    <state width="635" height="342" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1584925326825" />
+    <state x="374" y="143" key="SettingsEditor" timestamp="1584936262492">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="374" y="143" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584853665741" />
+    <state x="374" y="143" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584936262492" />
     <state x="368" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1582612894871">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="368" y="260" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1582612894871" />
-    <state x="1011" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1582091566055">
+    <state x="1011" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1584906771005">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="1011" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1582091566055" />
+    <state x="1011" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1584906771005" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Fisher$Flask__test_test_py_.coverage" NAME="Flask (test/test.py) Coverage Results" MODIFIED="1584924559722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Fisher$test_pymongo.coverage" NAME="test_pymongo Coverage Results" MODIFIED="1582613313130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
-    <SUITE FILE_PATH="coverage/Fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1584904958286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Fisher$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1585107473680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1585114900950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Fisher$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1582092185198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Fisher$Flask__fisher_py_.coverage" NAME="Flask (fisher.py) Coverage Results" MODIFIED="1584859028183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

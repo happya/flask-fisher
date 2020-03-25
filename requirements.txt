@@ -1,2 +1,4 @@
 flask
 requests
+WTForms
+flask-sqlalchemy
