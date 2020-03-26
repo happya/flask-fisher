@@ -2,3 +2,4 @@ flask
 requests
 WTForms
 flask-sqlalchemy
+flask-login

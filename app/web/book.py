@@ -5,7 +5,7 @@ description: view function of Book
 import json
 from flask import jsonify, request, render_template, flash
 
-from app.spider.fisher_book import FisherBook
+from app.spider.fish_book import FishBook
 from app.libs.helper import is_isbn_or_key
 
 # blueprint
@@ -32,7 +32,7 @@ def search():
         q = form.q.data.strip()
         page = form.page.data
         isbn_or_key = is_isbn_or_key(q)
-        fisher_book = FisherBook()
+        fisher_book = FishBook()
 
         if isbn_or_key == 'isbn':
             fisher_book.search_by_keyword(q)
@@ -52,7 +52,10 @@ def search():
 # book detail page
 @web.route('/book/<isbn>/detail')
 def book_detail(isbn):
-    pass
+    fish_book = FishBook()
+    fish_book.search_by_isbn(isbn)
+    book = BookViewModel(fish_book.first)
+    return render_template('book_detail.html', book=book, wishes=[], gifts=[])
 
 
 @web.route('/test')

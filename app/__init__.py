@@ -3,16 +3,23 @@ author: yyi
 The initialization work for app.
 """
 from flask import Flask
-from app.models.book import db
+from app.models.base import db
+from flask_login import LoginManager
+
+login_manager = LoginManager()
 
 
 def create_app():
-    app = Flask(__name__, static_folder='static')
+    app = Flask(__name__)
     app.config.from_object('app.secure')
     app.config.from_object('app.setting')
     register_blueprint(app)
 
     db.init_app(app)
+    login_manager.init_app(app)
+    # define login view_function from end_point
+    login_manager.login_view = 'web.login'
+    login_manager.login_message = 'please login in or sign up'
     # db.create_all(app=app)
     # another way:
     with app.app_context():
