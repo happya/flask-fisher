@@ -7,7 +7,7 @@ from app.models.book import db
 
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, static_folder='static')
     app.config.from_object('app.secure')
     app.config.from_object('app.setting')
     register_blueprint(app)
