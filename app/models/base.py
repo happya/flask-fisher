@@ -1,8 +1,25 @@
 """
 author: yyi
 """
-from flask_sqlalchemy import SQLAlchemy
+from contextlib import contextmanager
+
+from flask_sqlalchemy import SQLAlchemy as _SQLAlchemy
 from sqlalchemy import Column, SmallInteger
+
+
+class SQLAlchemy(_SQLAlchemy):
+    # use context manager to auto complete the code
+    # before (__enter__): try
+    # after (__exit__): commit, or rollback
+    @contextmanager
+    def auto_commit(self):
+        try:
+            yield
+            self.session.commit()
+        except Exception as e:
+            db.session.rollback()
+            raise e
+
 
 db = SQLAlchemy()
 

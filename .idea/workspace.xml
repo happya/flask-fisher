@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f932ad56-182a-4e28-9928-28f86b15b769" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/forms/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/gift.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/wish.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/spider/fisher_book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/spider/fish_book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view_models/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view_models/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/gift.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/gift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/fisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/user.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +198,7 @@
       <workItem from="1582088448654" duration="6698000" />
       <workItem from="1582268674934" duration="3523000" />
       <workItem from="1582612894833" duration="7197000" />
-      <workItem from="1584853655812" duration="54614000" />
+      <workItem from="1584853655812" duration="58114000" />
     </task>
     <servers />
   </component>
@@ -224,10 +209,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="556" y="75" key="#Inspections" timestamp="1584903237149">
+    <state x="556" y="75" key="#Inspections" timestamp="1585255725388">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="556" y="75" key="#Inspections/0.0.1368.872@0.0.1368.872" timestamp="1584903237149" />
+    <state x="556" y="75" key="#Inspections/0.0.1368.872@0.0.1368.872" timestamp="1585255725388" />
     <state x="140" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584858928757">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -248,22 +233,22 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584928423206" />
-    <state width="903" height="203" key="GridCell.Tab.0.bottom" timestamp="1585203865379">
+    <state width="778" height="203" key="GridCell.Tab.0.bottom" timestamp="1585205235504">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="903" height="203" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585203865379" />
-    <state width="903" height="203" key="GridCell.Tab.0.center" timestamp="1585203865378">
+    <state width="778" height="203" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585205235504" />
+    <state width="778" height="203" key="GridCell.Tab.0.center" timestamp="1585205235497">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="903" height="203" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585203865378" />
-    <state width="903" height="203" key="GridCell.Tab.0.left" timestamp="1585203865377">
+    <state width="778" height="203" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585205235497" />
+    <state width="778" height="203" key="GridCell.Tab.0.left" timestamp="1585205235495">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="903" height="203" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585203865377" />
-    <state width="903" height="203" key="GridCell.Tab.0.right" timestamp="1585203865379">
+    <state width="778" height="203" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585205235495" />
+    <state width="778" height="203" key="GridCell.Tab.0.right" timestamp="1585205235499">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="903" height="203" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585203865379" />
+    <state width="778" height="203" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585205235499" />
     <state width="931" height="340" key="GridCell.Tab.1.bottom" timestamp="1585200039610">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

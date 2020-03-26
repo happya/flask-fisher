@@ -35,16 +35,19 @@ def save_to_gifts(isbn):
         # transaction
         # enable consistency
         # rollback
-        try:
+        # try:
+        with db.auto_commit():
+            # here the code is what do after yield
             gift = Gift()
             gift.isbn = isbn
             gift.uid = current_user.id
             current_user.beans += current_app.config['BEANS_UPLOAD_ONE_BOOK']
-
             db.session.add(gift)
-            db.session.commit()
-        except Exception as e:
-            db.session.rollback()
+
+            # db.session.commit()
+        # except Exception as e:
+        #     db.session.rollback()
+        #     raise e
     else:
         flash('already added to your wish list or gift list!')
     pass

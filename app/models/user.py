@@ -65,6 +65,7 @@ class User(UserMixin, Base):
                                        launched=False).first()
         return not gifting and not wishing
 
+
 @login_manager.user_loader
 def get_user(uid):
     return User.query.get(int(uid))
