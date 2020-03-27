@@ -9,7 +9,7 @@
 # from flask_login import login_user, logout_user, current_user, login_required
 # from app.libs.email import send_mail
 from flask import render_template, request, redirect, url_for, flash
-from flask_login import login_user
+from flask_login import login_user, logout_user
 
 from . import web
 from app.forms.auth import RegisterForm, LoginForm
@@ -69,4 +69,6 @@ def change_password():
 
 @web.route('/logout')
 def logout():
-    pass
+    # clear cookies
+    logout_user()
+    return redirect(url_for('web.index'))
