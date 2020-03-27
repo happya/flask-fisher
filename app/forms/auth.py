@@ -26,6 +26,7 @@ class RegisterForm(Form):
         if User.query.filter_by(nickname=field.data).first():
             raise ValidationError("nickname already exists!")
 
+
 class LoginForm(Form):
     email = StringField(validators=[DataRequired(), Length(8, 64),
                                     Email(message='invalid email address')])

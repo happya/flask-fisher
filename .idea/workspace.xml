@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f932ad56-182a-4e28-9928-28f86b15b769" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/view_models/trade.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/book.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/gift.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/gift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/web/wish.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/wish.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fullstack/SmartDataAnalyzer/flask" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.39205703" />
@@ -198,7 +199,7 @@
       <workItem from="1582088448654" duration="6698000" />
       <workItem from="1582268674934" duration="3523000" />
       <workItem from="1582612894833" duration="7197000" />
-      <workItem from="1584853655812" duration="58114000" />
+      <workItem from="1584853655812" duration="78802000" />
     </task>
     <servers />
   </component>
@@ -229,26 +230,26 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="291" y="29" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1582618146217" />
-    <state x="654" y="256" key="FileChooserDialogImpl" timestamp="1584928423206">
+    <state x="654" y="256" key="FileChooserDialogImpl" timestamp="1585265598803">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584928423206" />
-    <state width="778" height="203" key="GridCell.Tab.0.bottom" timestamp="1585205235504">
+    <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1585265598803" />
+    <state width="674" height="203" key="GridCell.Tab.0.bottom" timestamp="1585336871056">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="778" height="203" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585205235504" />
-    <state width="778" height="203" key="GridCell.Tab.0.center" timestamp="1585205235497">
+    <state width="674" height="203" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585336871056" />
+    <state width="674" height="203" key="GridCell.Tab.0.center" timestamp="1585336871055">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="778" height="203" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585205235497" />
-    <state width="778" height="203" key="GridCell.Tab.0.left" timestamp="1585205235495">
+    <state width="674" height="203" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585336871055" />
+    <state width="674" height="203" key="GridCell.Tab.0.left" timestamp="1585336871055">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="778" height="203" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585205235495" />
-    <state width="778" height="203" key="GridCell.Tab.0.right" timestamp="1585205235499">
+    <state width="674" height="203" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585336871055" />
+    <state width="674" height="203" key="GridCell.Tab.0.right" timestamp="1585336871056">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="778" height="203" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585205235499" />
+    <state width="674" height="203" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585336871056" />
     <state width="931" height="340" key="GridCell.Tab.1.bottom" timestamp="1585200039610">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -273,16 +274,16 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="368" y="260" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1582612894871" />
-    <state x="1012" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1585195946845">
+    <state x="1012" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1585337130661">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="1012" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1585195946845" />
+    <state x="1012" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1585337130661" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Fisher$Flask__test_test_py_.coverage" NAME="Flask (test/test.py) Coverage Results" MODIFIED="1584924559722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Fisher$test_pymongo.coverage" NAME="test_pymongo Coverage Results" MODIFIED="1582613313130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/Fisher$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1585107473680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1585203865326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Fisher$fisher.coverage" NAME="fisher Coverage Results" MODIFIED="1585336871025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Fisher$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1582092185198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Fisher$Flask__fisher_py_.coverage" NAME="Flask (fisher.py) Coverage Results" MODIFIED="1585200039582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

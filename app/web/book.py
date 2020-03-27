@@ -2,8 +2,8 @@
 author: yyi
 description: view function of Book
 """
-import json
 from flask import jsonify, request, render_template, flash
+from flask_login import current_user
 
 from app.spider.fish_book import FishBook
 from app.libs.helper import is_isbn_or_key
@@ -11,7 +11,10 @@ from app.libs.helper import is_isbn_or_key
 # blueprint
 from . import web
 from app.forms.book import SearchForm
+from ..models.gift import Gift
+from ..models.wish import Wish
 from ..view_models.book import BookViewModel, BookCollection
+from ..view_models.trade import TradeInfo
 
 
 @web.route('/book/search')
@@ -52,10 +55,38 @@ def search():
 # book detail page
 @web.route('/book/<isbn>/detail')
 def book_detail(isbn):
+    has_in_gifts = False
+    has_in_wishes = False
+
+    # get book details
     fish_book = FishBook()
     fish_book.search_by_isbn(isbn)
     book = BookViewModel(fish_book.first)
-    return render_template('book_detail.html', book=book, wishes=[], gifts=[])
+
+    # is current_user is the sender or requester of this book?
+    # needs login
+    if current_user.is_authenticated:
+        # if is sender
+        if Gift.query.filter_by(uid=current_user.id, isbn=isbn,
+                                launched=False).first():
+            has_in_gifts = True
+        if Wish.query.filter_by(uid=current_user.id, isbn=isbn,
+                                launched=False).first():
+            has_in_wishes = True
+
+    # get book as a gift, get all the sender
+    trade_gifts = Gift.query.filter_by(isbn=isbn, launched=False).all()
+    # get book as a wish, get all the requester
+    trade_wishes = Wish.query.filter_by(isbn=isbn, launched=False).all()
+
+    # get trade view model
+    trade_gifts_model = TradeInfo(trade_gifts)
+    trade_wishes_model = TradeInfo(trade_wishes)
+    return render_template('book_detail.html', book=book,
+                           wishes=trade_wishes_model,
+                           gifts=trade_gifts_model,
+                           has_in_gifts=has_in_gifts,
+                           has_in_wishes=has_in_wishes)
 
 
 @web.route('/test')

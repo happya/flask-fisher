@@ -9,7 +9,7 @@
 # from . import web
 # from flask import current_app, flash, redirect, url_for, render_template
 # from flask_login import login_required, current_user
-from flask import current_app, flash
+from flask import current_app, flash, redirect, url_for
 from flask_login import login_required, current_user
 from . import web
 from app.models.gift import Gift
@@ -50,7 +50,7 @@ def save_to_gifts(isbn):
         #     raise e
     else:
         flash('already added to your wish list or gift list!')
-    pass
+    return redirect(url_for('web.book_detail', isbn=isbn))
 
 
 @web.route('/gifts/<gid>/redraw')

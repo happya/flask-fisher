@@ -11,8 +11,12 @@
 # from app.view_models.trade import MyTrades
 # from app import limiter
 # from flask_login import login_required
-from . import web
+from flask import flash, redirect, url_for
+from flask_login import login_required, current_user
 
+from . import web
+from ..models.base import db
+from ..models.wish import Wish
 
 
 def limit_key_prefix():
@@ -23,10 +27,20 @@ def limit_key_prefix():
 def my_wish():
     pass
 
+
 @web.route('/wish/book/<isbn>')
-# @login_required
+@login_required
 def save_to_wish(isbn):
-    pass
+    if current_user.can_save_to_list(isbn):
+        with db.auto_commit():
+            wish = Wish()
+            wish.uid = current_user.id
+            wish.isbn = isbn
+            db.session.add(wish)
+    else:
+        flash('This book is already in your wish list or gift list!')
+    return redirect(url_for('web.book_detail', isbn=isbn))
+
 
 @web.route('/satisfy/wish/<int:wid>')
 # @limiter.limit(key_func=limit_key_prefix)
