@@ -3,3 +3,4 @@ requests
 WTForms
 flask-sqlalchemy
 flask-login
+flask-mail

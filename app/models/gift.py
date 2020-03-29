@@ -6,7 +6,7 @@ from sqlalchemy import Column, Integer, Boolean, ForeignKey, String, desc, func
 from sqlalchemy.orm import relationship
 
 from app.models.base import db, Base
-from app.models.wish import Wish
+
 from app.spider.fish_book import FishBook
 
 
@@ -58,7 +58,6 @@ class Gift(Base):
             desc(Gift.create_time)
         ).all()
 
-
     @classmethod
     def get_wish_counts(cls, isbn_list):
         """
@@ -79,3 +78,4 @@ class Gift(Base):
         return count_list
 
 
+from app.models.wish import Wish

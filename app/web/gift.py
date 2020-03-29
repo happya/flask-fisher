@@ -15,6 +15,7 @@ from . import web
 from app.models.gift import Gift
 from app.models.base import db
 from app.view_models.gift import MyGifts
+from ..view_models.trade import MyTrades
 
 
 @web.route('/my/gifts')
@@ -28,8 +29,8 @@ def my_gifts():
     # use "mysql in" to search the results in wishes
     wish_count_list = Gift.get_wish_counts(isbn_list)
 
-    gifts_view_model = MyGifts(gifts_of_mine, wish_count_list)
-    return render_template('my_gifts.html', gifts=gifts_view_model.gifts)
+    gifts_view_model = MyTrades(gifts_of_mine, wish_count_list)
+    return render_template('my_gifts.html', gifts=gifts_view_model.trades)
 
 
 @web.route('/gifts/book/<isbn>')

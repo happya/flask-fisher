@@ -11,8 +11,8 @@ from app.libs.helper import is_isbn_or_key
 # blueprint
 from . import web
 from app.forms.book import SearchForm
-from ..models.gift import Gift
-from ..models.wish import Wish
+from app.models.gift import Gift
+from app.models.wish import Wish
 from ..view_models.book import BookViewModel, BookCollection
 from ..view_models.trade import TradeInfo
 
