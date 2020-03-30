@@ -15,6 +15,8 @@ from . import web
 from app.models.gift import Gift
 from app.models.base import db
 from app.view_models.gift import MyGifts
+from ..libs.enums import PendingStatus
+from ..models.drift import Drift
 from ..view_models.trade import MyTrades
 
 
@@ -65,6 +67,21 @@ def save_to_gifts(isbn):
 
 
 @web.route('/gifts/<gid>/redraw')
-# @login_required
+@login_required
 def redraw_from_gifts(gid):
-    pass
+    gift = Gift.query.filter_by(
+        id=gid,
+        launched=False
+    ).first_or_404()
+    # check the status of drift
+    drift = Drift.query.filter_by(
+        gift_id=gid,
+        pending=PendingStatus.Waiting
+    ).first()
+    if drift:
+        flash('This gift is trading, please go to Drift to handle it first')
+    else:
+        with db.auto_commit():
+            current_user.beans -= current_app.config['BEANS_UPLOAD_ONE_BOOK']
+            gift.delete()
+    return redirect(url_for('web.my_gifts'))

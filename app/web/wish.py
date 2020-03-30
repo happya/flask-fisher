@@ -15,7 +15,9 @@ from flask import flash, redirect, url_for, render_template
 from flask_login import login_required, current_user
 
 from . import web
+from ..libs.email import send_mail
 from ..models.base import db
+from ..models.gift import Gift
 from ..models.wish import Wish
 from ..view_models.trade import MyTrades
 from ..view_models.wish import MyWishes
@@ -38,8 +40,6 @@ def my_wish():
     return render_template('my_wish.html', wishes=wishes_view_model.trades)
 
 
-
-
 @web.route('/wish/book/<isbn>')
 @login_required
 def save_to_wish(isbn):
@@ -56,15 +56,41 @@ def save_to_wish(isbn):
 
 @web.route('/satisfy/wish/<int:wid>')
 # @limiter.limit(key_func=limit_key_prefix)
-# @login_required
+@login_required
 def satisfy_wish(wid):
-    pass
+    # send book
+    # some one wants a book
+    wish = Wish.query.get_or_404(wid)
+    # check if current user uploads this book as a gift
+    gift = Gift.query.filter_by(
+        uid=current_user.id,
+        isbn=wish.isbn
+    ).first()
+    # if not a gift, should upload
+    if not gift:
+        flash('You have not uploaded this book. Please click Add to Gift. '
+              'Please make sure your can send this book before add it to gift')
+    # if uploaded, send the wisher an email
+    else:
+        send_mail(wish.user.email,
+                  'Someone wants to send you a Book',
+                  'email/satisfy_wish.html',
+                  wish=wish, gift=gift)
+        flash('An email is sent to the wisher. '
+              'If he/she accepts your gift, your will receive a gift')
+    return redirect(url_for('web.book_detail', isbn=wish.isbn))
 
 
 @web.route('/wish/book/<isbn>/redraw')
-# @login_required
+@login_required
 def redraw_from_wish(isbn):
-    pass
+    wish = Wish.query.filter_by(
+        isbn=isbn,
+        launched=False
+    ).first()
+    with db.auto_commit():
+        wish.delete()
+    return redirect(url_for('web.my_wish'))
 
 
 # @limiter.limited

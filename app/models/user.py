@@ -4,6 +4,8 @@ model: book
 """
 # sqlalchemy
 # Flask_SQLAlchemy
+from math import floor
+
 from flask import current_app
 from flask_login import UserMixin
 from sqlalchemy import Column, Integer, String, Boolean, Float
@@ -11,8 +13,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
 from app import login_manager
+from app.libs.enums import PendingStatus
 from app.libs.helper import is_isbn_or_key
 from app.models.base import Base, db
+from app.models.drift import Drift
 from app.models.gift import Gift
 from app.models.wish import Wish
 from app.spider.fish_book import FishBook
@@ -67,6 +71,28 @@ class User(UserMixin, Base):
                                        launched=False).first()
         return not gifting and not wishing
 
+    def can_send_drift(self):
+        """
+        check if can send a drift
+        1. can not request a book from self
+        2. should have enough beans
+        3. must send a book per requesting two books
+        :return:
+        """
+        if self.beans < 1:
+            return False
+        # get the count of sent gifts
+        success_gifts_count = Gift.query.filter_by(
+            uid=self.id,
+            launched=True
+        ).count()
+        # get the count of successfully requested book
+        success_receive_count = Drift.query.filter_by(
+            requester_id=self.id,
+            pending=PendingStatus.Success
+        ).count()
+        return True if floor(success_receive_count / 2) <= floor(success_gifts_count) else False
+
     def generate_token(self, expiration=600):
         """
         generate token
@@ -89,6 +115,14 @@ class User(UserMixin, Base):
             user.password = new_password
         return True
 
+    @property
+    def summary(self):
+        return dict(
+            nickname=self.nickname,
+            beans=self.beans,
+            email=self.email,
+            send_receive=str(self.send_counter) + '/' + str(self.receive_counter)
+        )
 
 @login_manager.user_loader
 def get_user(uid):

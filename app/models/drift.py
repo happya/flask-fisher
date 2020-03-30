@@ -1,8 +1,9 @@
 """
 author: yyi
 """
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, SmallInteger
 
+from app.libs.enums import PendingStatus
 from app.models.base import Base
 
 
@@ -24,4 +25,21 @@ class Drift(Base):
     book_img = Column(String(50))
 
     # requester info
+    requester_id = Column(Integer)
+    requester_nickname = Column(String(20))
 
+    # sender info
+    gifter_id = Column(Integer)
+    gift_id = Column(Integer)
+    gifter_nickname = Column(String(20))
+
+    # drift state
+    _pending = Column('pending', SmallInteger, default=1)
+
+    @property
+    def pending(self):
+        return PendingStatus(self._pending)
+
+    @pending.setter
+    def pending(self, status):
+        self._pending = status.value
