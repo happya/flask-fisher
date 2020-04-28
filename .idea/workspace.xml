@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f932ad56-182a-4e28-9928-28f86b15b769" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/libs/enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/view_models/drift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Fisher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fisher.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms/book.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms/book.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/drift.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/drift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/gift.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/gift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/email/get_gift.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/email/get_gift.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/email/satisify_wish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/email/satisfy_wish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/drift.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/drift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/gift.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/gift.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/wish.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/wish.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +193,9 @@
       <workItem from="1582268674934" duration="3523000" />
       <workItem from="1582612894833" duration="7197000" />
       <workItem from="1584853655812" duration="120447000" />
-      <workItem from="1585525215491" duration="17021000" />
+      <workItem from="1585525215491" duration="17977000" />
+      <workItem from="1585804455795" duration="1343000" />
+      <workItem from="1585959779266" duration="14000" />
     </task>
     <servers />
   </component>
@@ -237,26 +226,26 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="291" y="29" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1582618146217" />
-    <state x="654" y="256" key="FileChooserDialogImpl" timestamp="1585438028932">
+    <state x="654" y="256" key="FileChooserDialogImpl" timestamp="1585804585609">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1585438028932" />
-    <state width="639" height="123" key="GridCell.Tab.0.bottom" timestamp="1585547625974">
+    <state x="654" y="256" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1585804585609" />
+    <state width="1326" height="123" key="GridCell.Tab.0.bottom" timestamp="1585548335378">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="639" height="123" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585547625974" />
-    <state width="639" height="123" key="GridCell.Tab.0.center" timestamp="1585547625973">
+    <state width="1326" height="123" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585548335378" />
+    <state width="1326" height="123" key="GridCell.Tab.0.center" timestamp="1585548335378">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="639" height="123" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585547625973" />
-    <state width="639" height="123" key="GridCell.Tab.0.left" timestamp="1585547625973">
+    <state width="1326" height="123" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585548335378" />
+    <state width="1326" height="123" key="GridCell.Tab.0.left" timestamp="1585548335378">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="639" height="123" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585547625973" />
-    <state width="639" height="123" key="GridCell.Tab.0.right" timestamp="1585547625974">
+    <state width="1326" height="123" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585548335378" />
+    <state width="1326" height="123" key="GridCell.Tab.0.right" timestamp="1585548335378">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="639" height="123" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585547625974" />
+    <state width="1326" height="123" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585548335378" />
     <state width="577" height="295" key="GridCell.Tab.1.bottom" timestamp="1585461725529">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -281,10 +270,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state width="690" height="442" key="XDebugger.FullValuePopup/0.0.1368.872@0.0.1368.872" timestamp="1585459678273" />
-    <state x="368" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1585525215541">
+    <state x="368" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1585959779971">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="368" y="260" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1585525215541" />
+    <state x="368" y="260" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1585959779971" />
     <state x="1014" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1585547395392">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
